@@ -159,6 +159,14 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\Framework\Angular\angular-route.js" />
+    <Content Include="Scripts\Framework\Angular\angular-route.min.js" />
+    <Content Include="Scripts\App\Controllers\Home\Init.js" />
+    <Content Include="Scripts\App\Controllers\Home\Index.js" />
+    <Content Include="Scripts\App\Module.js" />
+    <Content Include="Scripts\Framework\Angular\angular-mocks.js" />
+    <Content Include="Scripts\Framework\Angular\angular.js" />
+    <Content Include="Scripts\Framework\Angular\angular.min.js" />
     <Content Include="Scripts\Framework\modernizr-2.6.2.js" />
     <Content Include="Scripts\Framework\respond.js" />
     <Content Include="Scripts\Framework\respond.min.js" />
@@ -181,6 +189,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Scripts\Framework\Angular\angular.min.js.map" />
+    <Content Include="Views\Home\Init.cshtml" />
+    <Content Include="Scripts\Framework\Angular\angular-route.min.js.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

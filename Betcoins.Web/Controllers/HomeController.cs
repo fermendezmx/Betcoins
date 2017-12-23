@@ -4,11 +4,14 @@ namespace Betcoins.Web.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Init()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
-            return View();
+            return PartialView();
         }
     }
 }
