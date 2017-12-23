@@ -1,6 +1,0 @@
-C:\Users\Developer\Documents\GitHub\Betcoins\Betcoins.BusinessLogic\bin\Debug\Betcoins.BusinessLogic.dll
-C:\Users\Developer\Documents\GitHub\Betcoins\Betcoins.BusinessLogic\bin\Debug\Betcoins.BusinessLogic.pdb
-C:\Users\Developer\Documents\GitHub\Betcoins\Betcoins.BusinessLogic\obj\Debug\Betcoins.BusinessLogic.csprojResolveAssemblyReference.cache
-C:\Users\Developer\Documents\GitHub\Betcoins\Betcoins.BusinessLogic\obj\Debug\Betcoins.BusinessLogic.csproj.CoreCompileInputs.cache
-C:\Users\Developer\Documents\GitHub\Betcoins\Betcoins.BusinessLogic\obj\Debug\Betcoins.BusinessLogic.dll
-C:\Users\Developer\Documents\GitHub\Betcoins\Betcoins.BusinessLogic\obj\Debug\Betcoins.BusinessLogic.pdb

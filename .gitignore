@@ -1,8 +1,9 @@
 packages/
-Betcoins.Web/obj/
-Betcoins.Web/obj/Debug/
 Betcoins.Web/bin/
+Betcoins.Web/obj/
 Betcoins.UnitTests/bin/
-Betcoins.UnitTests/obj/Debug/
+Betcoins.UnitTests/obj/
+Betcoins.BusinessLogic/bin/
+Betcoins.BusinessLogic/obj/
 *.suo
 /.vs/*
