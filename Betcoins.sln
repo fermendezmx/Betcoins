@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betcoins.Web", "Betcoins.Web\Betcoins.Web.csproj", "{E9F8587B-5A31-4432-BE56-CE8BCC73D504}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betcoins.UnitTests", "Betcoins.UnitTests\Betcoins.UnitTests.csproj", "{4D85DE3D-03C0-4F1D-B4B3-1AC9F7FD9E60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betcoins.Web", "Betcoins.Web\Betcoins.Web.csproj", "{23C7D85F-9933-425A-A535-779AB7E351C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{114058A6-EE83-421B-8853-E1D92B8E448A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{5DC7E515-6F43-4324-9C68-0CD0FF612B97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E9F8587B-5A31-4432-BE56-CE8BCC73D504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9F8587B-5A31-4432-BE56-CE8BCC73D504}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9F8587B-5A31-4432-BE56-CE8BCC73D504}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9F8587B-5A31-4432-BE56-CE8BCC73D504}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D85DE3D-03C0-4F1D-B4B3-1AC9F7FD9E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D85DE3D-03C0-4F1D-B4B3-1AC9F7FD9E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D85DE3D-03C0-4F1D-B4B3-1AC9F7FD9E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D85DE3D-03C0-4F1D-B4B3-1AC9F7FD9E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23C7D85F-9933-425A-A535-779AB7E351C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C7D85F-9933-425A-A535-779AB7E351C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C7D85F-9933-425A-A535-779AB7E351C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C7D85F-9933-425A-A535-779AB7E351C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D85DE3D-03C0-4F1D-B4B3-1AC9F7FD9E60} = {5DC7E515-6F43-4324-9C68-0CD0FF612B97}
+		{23C7D85F-9933-425A-A535-779AB7E351C1} = {114058A6-EE83-421B-8853-E1D92B8E448A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17713F46-CAC3-48C5-B2FE-AE2442399700}
