@@ -5,5 +5,7 @@ Betcoins.UnitTests/bin/
 Betcoins.UnitTests/obj/
 Betcoins.BusinessLogic/bin/
 Betcoins.BusinessLogic/obj/
+Betcoins.Model/bin/
+Betcoins.Model/obj/
 *.suo
 /.vs/*
