@@ -1,0 +1,7 @@
+packages/
+Betcoins.Web/obj/
+Betcoins.Web/bin/
+Betcoins.UnitTests/bin/
+Betcoins.UnitTests/obj/
+*.suo
+/.vs/*
