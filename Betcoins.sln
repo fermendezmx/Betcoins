@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betcoins.Model", "Betcoins.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{37739415-2F26-46D5-B2E9-27DB31CB4A2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Betcoins.DomainClasses", "Betcoins.DomainClasses\Betcoins.DomainClasses.csproj", "{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{1212A0AA-D1C4-4597-AC65-A0CC2698B33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1212A0AA-D1C4-4597-AC65-A0CC2698B33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1212A0AA-D1C4-4597-AC65-A0CC2698B33B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{23C7D85F-9933-425A-A535-779AB7E351C1} = {114058A6-EE83-421B-8853-E1D92B8E448A}
 		{7CE664A4-9A91-4F43-B50E-9304123BC8C0} = {A6EA8AC9-AA57-488A-B38D-A770C04D9A92}
 		{1212A0AA-D1C4-4597-AC65-A0CC2698B33B} = {344C6384-75A6-4B58-A634-8F8F5E1816C4}
+		{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8} = {37739415-2F26-46D5-B2E9-27DB31CB4A2F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17713F46-CAC3-48C5-B2FE-AE2442399700}
