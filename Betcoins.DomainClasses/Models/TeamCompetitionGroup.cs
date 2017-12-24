@@ -8,7 +8,7 @@ namespace Betcoins.DomainClasses.Models
         public int TeamCompetitionId { get; set; }
         public int GroupId { get; set; }
         public int Points { get; set; }
-        public int? Played { get; set; }
+        public int? Played { get; private set; }
         public int Won { get; set; }
         public int Lost { get; set; }
         public int Draw { get; set; }
@@ -21,7 +21,7 @@ namespace Betcoins.DomainClasses.Models
         #region Relationships
 
         public Group Group { get; set; }
-        public TeamCompetition TeamCompetition { get; set; }
+        public TeamCompetition Team { get; set; }
 
         #endregion
     }

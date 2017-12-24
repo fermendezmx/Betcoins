@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +53,18 @@
     <Compile Include="Models\Competition.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="Models\League.cs" />
+    <Compile Include="Models\Mapping\TeamCompetitionGroupMap.cs" />
+    <Compile Include="Models\Mapping\TeamCompetitionMap.cs" />
+    <Compile Include="Models\Mapping\TeamMap.cs" />
+    <Compile Include="Models\Mapping\StageMap.cs" />
+    <Compile Include="Models\Mapping\MatchTypeMap.cs" />
+    <Compile Include="Models\Mapping\MatchMap.cs" />
+    <Compile Include="Models\Mapping\LeagueMap.cs" />
+    <Compile Include="Models\Mapping\GroupMap.cs" />
+    <Compile Include="Models\Mapping\CompetitionMap.cs" />
+    <Compile Include="Models\Mapping\BetMap.cs" />
+    <Compile Include="Models\Mapping\AccountCompetitionMap.cs" />
+    <Compile Include="Models\Mapping\AccountMap.cs" />
     <Compile Include="Models\Match.cs" />
     <Compile Include="Models\MatchType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +72,11 @@
     <Compile Include="Models\Team.cs" />
     <Compile Include="Models\TeamCompetition.cs" />
     <Compile Include="Models\TeamCompetitionGroup.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
