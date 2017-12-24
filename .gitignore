@@ -9,5 +9,7 @@ Betcoins.Model/bin/
 Betcoins.Model/obj/
 Betcoins.DomainClasses/bin/
 Betcoins.DomainClasses/obj/
+Betcoins.Context/bin/
+Betcoins.Context/obj/
 *.suo
 /.vs/*
