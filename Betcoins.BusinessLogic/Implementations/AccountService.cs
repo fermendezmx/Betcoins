@@ -1,5 +1,6 @@
-﻿using Betcoins.BusinessLogic.Contracts;
-using Betcoins.DomainClasses.Models;
+﻿using AutoMapper;
+using Betcoins.BusinessLogic.Contracts;
+using Betcoins.Model.Client;
 using Betcoins.Repositories.Contracts;
 using Betcoins.Repositories.Implementations;
 
@@ -16,7 +17,7 @@ namespace Betcoins.BusinessLogic.Implementations
 
         public Account Get(int id)
         {
-            return _accountRepository.GetById(id);
+            return Mapper.Map<Account>(_accountRepository.GetById(id));
         }
     }
 }

@@ -46,6 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -156,6 +159,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Bootstrap\AutoMapperFactory.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,6 +211,10 @@
     <ProjectReference Include="..\Betcoins.DomainClasses\Betcoins.DomainClasses.csproj">
       <Project>{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}</Project>
       <Name>Betcoins.DomainClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Betcoins.Model\Betcoins.Model.csproj">
+      <Project>{1212a0aa-d1c4-4597-ac65-a0cc2698b33b}</Project>
+      <Name>Betcoins.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

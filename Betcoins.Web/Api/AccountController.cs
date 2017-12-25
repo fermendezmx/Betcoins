@@ -1,6 +1,6 @@
 ﻿using Betcoins.BusinessLogic.Contracts;
 using Betcoins.BusinessLogic.Implementations;
-using Betcoins.DomainClasses.Models;
+using Betcoins.Model.Client;
 using System.Web.Http;
 
 namespace Betcoins.Web.Api

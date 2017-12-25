@@ -1,4 +1,4 @@
-﻿using Betcoins.DomainClasses.Models;
+﻿using Betcoins.Model.Client;
 
 namespace Betcoins.BusinessLogic.Contracts
 {

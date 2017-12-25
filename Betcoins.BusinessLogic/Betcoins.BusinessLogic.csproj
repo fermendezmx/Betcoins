@@ -30,8 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,11 +48,17 @@
     <Compile Include="Implementations\AccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Betcoins.DomainClasses\Betcoins.DomainClasses.csproj">
       <Project>{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}</Project>
       <Name>Betcoins.DomainClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Betcoins.Model\Betcoins.Model.csproj">
+      <Project>{1212A0AA-D1C4-4597-AC65-A0CC2698B33B}</Project>
+      <Name>Betcoins.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Betcoins.Repositories\Betcoins.Repositories.csproj">
       <Project>{F9970518-CCA8-4F86-919B-6044B19BB88D}</Project>
