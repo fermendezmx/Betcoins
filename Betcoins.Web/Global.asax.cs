@@ -17,6 +17,7 @@ namespace Betcoins.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperFactory.Configure();
+            AutofacFactory.Configure();
         }
     }
 }

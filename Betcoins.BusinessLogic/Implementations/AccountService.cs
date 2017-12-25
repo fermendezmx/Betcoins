@@ -2,7 +2,6 @@
 using Betcoins.BusinessLogic.Contracts;
 using Betcoins.Model.Client;
 using Betcoins.Repositories.Contracts;
-using Betcoins.Repositories.Implementations;
 
 namespace Betcoins.BusinessLogic.Implementations
 {
@@ -10,9 +9,9 @@ namespace Betcoins.BusinessLogic.Implementations
     {
         private readonly IAccountRepository _accountRepository;
 
-        public AccountService()
+        public AccountService(IAccountRepository accountRepository)
         {
-            _accountRepository = new AccountRepository();
+            _accountRepository = accountRepository;
         }
 
         public Account Get(int id)
