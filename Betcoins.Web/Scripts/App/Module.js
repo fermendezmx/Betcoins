@@ -1,7 +1,8 @@
 ﻿angular
     .module('betcoins', [
         'ngRoute',
-        'betcoins.home'
+        'betcoins.home.init',
+        'betcoins.home.index'
     ])
     .config([
         '$routeProvider',
