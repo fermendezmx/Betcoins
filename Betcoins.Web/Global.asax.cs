@@ -1,9 +1,4 @@
-﻿using Betcoins.Web.Bootstrap;
-using System.Web;
-using System.Web.Http;
-using System.Web.Mvc;
-using System.Web.Optimization;
-using System.Web.Routing;
+﻿using System.Web;
 
 namespace Betcoins.Web
 {
@@ -11,13 +6,7 @@ namespace Betcoins.Web
     {
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
-            AutoMapperFactory.Configure();
-            AutofacFactory.Configure();
+
         }
     }
 }
