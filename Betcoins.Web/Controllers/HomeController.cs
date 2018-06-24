@@ -2,6 +2,7 @@
 
 namespace Betcoins.Web.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Init()
