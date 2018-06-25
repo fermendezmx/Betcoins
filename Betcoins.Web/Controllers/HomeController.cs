@@ -1,8 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using Betcoins.Web.Filters;
+using System.Web.Mvc;
 
 namespace Betcoins.Web.Controllers
 {
-    [Authorize]
+    [ControllerAuthorize]
     public class HomeController : Controller
     {
         public ActionResult Init()
