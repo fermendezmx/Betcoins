@@ -233,12 +233,16 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\App\Controllers\Shared\Login.js" />
+    <Content Include="Scripts\App\Services\Shared\Common.js" />
+    <Content Include="Scripts\Framework\Angular\angular-local-storage.js" />
     <Content Include="Scripts\Framework\Angular\angular-route.js" />
     <Content Include="Scripts\Framework\Angular\angular-route.min.js" />
     <Content Include="Scripts\App\Controllers\Home\Init.js" />
     <Content Include="Scripts\App\Controllers\Home\Index.js" />
     <Content Include="Scripts\App\Module.js" />
     <Content Include="Scripts\Framework\Angular\angular-mocks.js" />
+    <Content Include="Scripts\Framework\Angular\angular-social.js" />
     <Content Include="Scripts\Framework\Angular\angular.js" />
     <Content Include="Scripts\Framework\Angular\angular.min.js" />
     <Content Include="Scripts\Framework\modernizr-2.6.2.js" />
