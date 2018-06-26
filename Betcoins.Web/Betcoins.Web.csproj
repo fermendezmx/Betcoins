@@ -237,6 +237,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\App\Controllers\Shared\Login.js" />
     <Content Include="Scripts\App\Services\Shared\Common.js" />
+    <Content Include="Scripts\Framework\Angular\angular-jwt.js" />
     <Content Include="Scripts\Framework\Angular\angular-local-storage.js" />
     <Content Include="Scripts\Framework\Angular\angular-route.js" />
     <Content Include="Scripts\Framework\Angular\angular-route.min.js" />
@@ -273,6 +274,7 @@
     <Content Include="Views\Home\Init.cshtml" />
     <Content Include="Scripts\Framework\Angular\angular-route.min.js.map" />
     <Content Include="Views\Shared\Login.cshtml" />
+    <Content Include="Scripts\Framework\Angular\angular-jwt.min.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Betcoins.BusinessLogic\Betcoins.BusinessLogic.csproj">

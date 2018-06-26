@@ -11,10 +11,10 @@
                         FullName: user.name,
                         Email: user.email,
                         ImageUrl: user.imageUrl,
-                        Token: user.token,
                         UID: user.uid
                     });
 
+                    localStorageService.set('token', user.token);
                     $window.location.href = '/';
                 }
             );

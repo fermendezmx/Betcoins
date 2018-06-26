@@ -13,7 +13,8 @@ namespace Betcoins.Web
                 "~/Scripts/Framework/Angular/angular-mocks.js",
                 "~/Scripts/Framework/Angular/angular-route.min.js",
                 "~/Scripts/Framework/Angular/angular-social.js",
-                "~/Scripts/Framework/Angular/angular-local-storage.js"
+                "~/Scripts/Framework/Angular/angular-local-storage.js",
+                "~/Scripts/Framework/Angular/angular-jwt.js"
             ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
