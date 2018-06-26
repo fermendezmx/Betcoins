@@ -9,10 +9,12 @@ namespace Betcoins.Web
         {
             bundles.Add(new ScriptBundle("~/bundles/framework").Include(
                 "~/Scripts/Framework/respond.min.js",
+                "~/Scripts/Framework/lock.js",
                 "~/Scripts/Framework/Angular/angular.min.js",
                 "~/Scripts/Framework/Angular/angular-mocks.js",
                 "~/Scripts/Framework/Angular/angular-route.min.js",
                 "~/Scripts/Framework/Angular/angular-social.js",
+                "~/Scripts/Framework/Angular/angular-auth0.js",
                 "~/Scripts/Framework/Angular/angular-local-storage.js",
                 "~/Scripts/Framework/Angular/angular-jwt.js"
             ));

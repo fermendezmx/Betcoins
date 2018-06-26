@@ -1,6 +1,7 @@
 ﻿angular
     .module('betcoins', [
         'ngRoute',
+        'auth0',
         'socialLogin',
         'LocalStorageModule',
         'angular-jwt',
@@ -20,6 +21,22 @@
             $routeProvider.otherwise({
                 redirectTo: '/'
             });
+        }
+    ])
+    .config([
+        'authProvider',
+        function (authProvider) {
+            authProvider.init({
+                domain: 'betcoins-dev.auth0.com',
+                clientID: 'Q9L35ZyZqu3CdYsjw9rMUwgA6dxonBZ6',
+                loginUrl: '/login'
+            });
+        }
+    ])
+    .run([
+        'auth',
+        function (auth) {
+            auth.hookEvents();
         }
     ])
     .config([
