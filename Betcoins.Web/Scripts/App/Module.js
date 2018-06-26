@@ -28,17 +28,16 @@
         function (authProvider) {
             authProvider.init({
                 domain: 'betcoins-dev.auth0.com',
-                clientID: 'Q9L35ZyZqu3CdYsjw9rMUwgA6dxonBZ6',
-                loginUrl: '/login'
+                clientID: 'Q9L35ZyZqu3CdYsjw9rMUwgA6dxonBZ6'
             });
         }
     ])
-    .run([
-        'auth',
-        function (auth) {
-            auth.hookEvents();
-        }
-    ])
+    //.run([
+    //    'auth',
+    //    function (auth) {
+    //        auth.hookEvents();
+    //    }
+    //])
     .config([
         'socialProvider',
         function (socialProvider) {

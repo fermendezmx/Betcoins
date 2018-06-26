@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace Betcoins.Web.Controllers
 {
-    [ControllerAuthorize]
+    //[ControllerAuthorize]
     public class HomeController : Controller
     {
         public ActionResult Init()
