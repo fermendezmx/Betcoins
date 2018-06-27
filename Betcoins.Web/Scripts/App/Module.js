@@ -2,7 +2,6 @@
     .module('betcoins', [
         'ngRoute',
         'auth0.lock',
-        'socialLogin',
         'angular-jwt',
         'angular-storage',
         'betcoins.home.init',
@@ -52,12 +51,6 @@
                     }
                 }
             });
-        }
-    ])
-    .config([
-        'socialProvider',
-        function (socialProvider) {
-            socialProvider.setFbKey({ appId: "164256900930430", apiVersion: "v2.4" });
         }
     ])
     .config([
