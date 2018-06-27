@@ -10,8 +10,9 @@
                     lock.show();
                 },
                 logout: function () {
-                    // Remove token and expiry time from localStorage
+                    // Remove tokens and expiry time from localStorage
                     store.remove('access_token');
+                    store.remove('id_token');
                     store.remove('expires_at');
                     $location.path('/');
                 },
@@ -26,10 +27,28 @@
                                 result.expiresIn * 1000 + new Date().getTime()
                             );
 
-                            // Save token and expiration to localStorage
-                            store.set('access_token', result.idToken);
+                            // Save tokens and expiration to localStorage
+                            store.set('access_token', result.accessToken);
+                            store.set('id_token', result.idToken);
                             store.set('expires_at', expiresAt);
-                            lock.hide();
+
+                            lock.getProfile(result.accessToken, function (error, profile) {
+                                if (profile) {
+                                    var account = {
+                                        AccountId: profile.sub,
+                                        Email: profile.email,
+                                        FirstName: profile.given_name,
+                                        LastName: profile.family_name,
+                                        FullName: profile.name,
+                                        NickName: profile.nickname,
+                                        Picture: profile.picture
+                                    };
+
+                                    console.log(account);
+                                }
+
+                                lock.hide();
+                            });
                         }
                     });
 
