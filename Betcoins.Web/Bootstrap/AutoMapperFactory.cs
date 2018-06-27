@@ -10,7 +10,7 @@ namespace Betcoins.Web.Bootstrap
         {
             Mapper.Initialize(x =>
             {
-                x.CreateMap<Db.Account, Account>().ReverseMap();
+                x.CreateMap<Db.Account, _Account>().ReverseMap();
             });
         }
     }

@@ -20,7 +20,7 @@ namespace Betcoins.Repositories.Implementations
 
         public Account GetById(int id)
         {
-            return _context.Accounts.FirstOrDefault(x => x.AccountId == id);
+            return _context.Accounts.FirstOrDefault();
         }
 
         public List<Account> GetAll()

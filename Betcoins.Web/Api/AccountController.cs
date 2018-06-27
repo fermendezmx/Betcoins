@@ -1,6 +1,7 @@
 ﻿using Betcoins.BusinessLogic.Contracts;
 using Betcoins.Model.Client;
 using Betcoins.Web.Api.Common;
+using System.Web.Http;
 
 namespace Betcoins.Web.Api
 {
@@ -13,9 +14,14 @@ namespace Betcoins.Web.Api
             _accountService = accountService;
         }
 
-        public Account Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            return _accountService.Get(id);
+            return Ok(_accountService.Get(id));
+        }
+
+        public IHttpActionResult Post(_Account account)
+        {
+            return Ok(account);
         }
     }
 }

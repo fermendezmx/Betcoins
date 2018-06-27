@@ -1,8 +1,8 @@
 ﻿angular
     .module('betcoins.service.shared.auth0', [])
     .service('auth0Service', [
-        'store', 'lock',
-        function (store, lock) {
+        'store', 'lock', 'accountservice',
+        function (store, lock, accountservice) {
             return {
                 login: function () {
                     // Display the Lock widget using the
@@ -44,7 +44,10 @@
                                         Picture: profile.picture
                                     };
 
-                                    store.set('baseInfo', account);
+                                    accountservice.post(account)
+                                        .then(function (result) {
+                                            store.set('baseInfo', result.data);
+                                        });
                                 }
 
                                 lock.hide();

@@ -5,7 +5,7 @@ namespace Betcoins.DomainClasses.Models
     public class Bet
     {
         public int BetId { get; set; }
-        public int AccountId { get; set; }
+        public string AccountId { get; set; }
         public int MatchId { get; set; }
         public int Coins { get; set; }
         public int HomeTeamGoals { get; set; }

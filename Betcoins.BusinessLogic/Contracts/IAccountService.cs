@@ -4,6 +4,6 @@ namespace Betcoins.BusinessLogic.Contracts
 {
     public interface IAccountService
     {
-        Account Get(int id);
+        _Account Get(int id);
     }
 }

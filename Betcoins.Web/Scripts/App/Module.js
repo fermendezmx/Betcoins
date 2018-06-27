@@ -8,7 +8,8 @@
         'betcoins.home.index',
         'betcoins.shared.login',
         'betcoins.service.shared.common',
-        'betcoins.service.shared.auth0'
+        'betcoins.service.shared.auth0',
+        'betcoins.service.account'
     ])
     .config([
         '$routeProvider',

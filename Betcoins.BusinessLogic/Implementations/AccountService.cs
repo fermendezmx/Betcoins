@@ -14,9 +14,9 @@ namespace Betcoins.BusinessLogic.Implementations
             _accountRepository = accountRepository;
         }
 
-        public Account Get(int id)
+        public _Account Get(int id)
         {
-            return Mapper.Map<Account>(_accountRepository.GetById(id));
+            return Mapper.Map<_Account>(_accountRepository.GetById(id));
         }
     }
 }
