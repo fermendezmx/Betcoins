@@ -1,9 +1,8 @@
-﻿using Betcoins.Web.Filters;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Betcoins.Web.Controllers
 {
-    [ControllerAuthorize]
+    [Authorize]
     public class HomeController : Controller
     {
         [AllowAnonymous]
