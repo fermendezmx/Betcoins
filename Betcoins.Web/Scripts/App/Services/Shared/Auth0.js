@@ -7,15 +7,11 @@
                 login: function () {
                     // Display the Lock widget using the
                     // instance initialized in the Module.js config
-                    lock.show({
-                        allowedConnections: ['facebook'],
-                        allowSignUp: false
-                    });
+                    lock.show();
                 },
                 logout: function () {
-                    // Remove tokens and expiry time from localStorage
+                    // Remove token and expiry time from localStorage
                     store.remove('access_token');
-                    store.remove('id_token');
                     store.remove('expires_at');
                     $location.path('/');
                 },
@@ -30,10 +26,10 @@
                                 result.expiresIn * 1000 + new Date().getTime()
                             );
 
-                            // Save tokens and expiration to localStorage
-                            store.set('access_token', result.accessToken);
-                            store.set('id_token', result.idToken);
+                            // Save token and expiration to localStorage
+                            store.set('access_token', result.idToken);
                             store.set('expires_at', expiresAt);
+                            lock.hide();
                         }
                     });
 

@@ -35,9 +35,17 @@
                 clientID: 'Q9L35ZyZqu3CdYsjw9rMUwgA6dxonBZ6',
                 options: {
                     autoclose: true,
+                    allowedConnections: ['facebook'],
+                    allowSignUp: false,
+                    closable: false,
+                    theme: {
+                        // Recommended max height of 58px for a better user experience
+                        logo: 'https://avatars2.githubusercontent.com/u/5487973?s=460&v=4'
+                    },
                     auth: {
                         responseType: 'token id_token',
                         audience: 'https://betcoins-dev.auth0.com/userinfo',
+                        redirect: false,
                         params: {
                             scope: 'openid profile email'
                         }

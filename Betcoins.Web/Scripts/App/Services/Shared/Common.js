@@ -8,7 +8,7 @@
                     return store.get('baseInfo');
                 },
                 getToken: function () {
-                    return store.get('token');
+                    return store.get('access_token');
                 }
             };
         }
