@@ -25,7 +25,8 @@ namespace Betcoins.Web
                 "~/Scripts/App/Controllers/Home/Index.js",
                 "~/Scripts/App/Controllers/Home/Init.js",
                 "~/Scripts/App/Controllers/Shared/Login.js",
-                "~/Scripts/App/Services/Shared/Common.js"
+                "~/Scripts/App/Services/Shared/Common.js",
+                "~/Scripts/App/Services/Shared/Auth0.js"
             ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're

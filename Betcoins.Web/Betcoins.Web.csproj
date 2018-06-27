@@ -251,6 +251,7 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\App\Services\Shared\Auth0.js" />
     <Content Include="Scripts\Framework\Angular\angular-lock.js" />
     <Content Include="Scripts\Framework\Angular\angular-lock.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-mocks.js" />

@@ -8,7 +8,8 @@
         'betcoins.home.init',
         'betcoins.home.index',
         'betcoins.shared.login',
-        'betcoins.service.shared.common'
+        'betcoins.service.shared.common',
+        'betcoins.service.shared.auth0'
     ])
     .config([
         '$routeProvider',
@@ -61,5 +62,11 @@
             });
 
             $httpProvider.interceptors.push('jwtInterceptor');
+        }
+    ])
+    .run([
+        'auth0Service',
+        function (auth0Service) {
+            auth0Service.setup();
         }
     ]);
