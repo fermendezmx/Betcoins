@@ -1,7 +1,7 @@
 ﻿angular
     .module('betcoins', [
         'ngRoute',
-        'auth0.lock',
+        //'auth0.lock',
         'socialLogin',
         'LocalStorageModule',
         'angular-jwt',
@@ -23,28 +23,28 @@
             });
         }
     ])
-    .config([
-        'lockProvider',
-        function (lockProvider) {
-            // Configure Auth0 Lock instance
-            // Read more about configuration here:
-            // https://auth0.com/docs/libraries/lock/v11
-            lockProvider.init({
-                domain: 'betcoins-dev.auth0.com',
-                clientID: 'Q9L35ZyZqu3CdYsjw9rMUwgA6dxonBZ6',
-                options: {
-                    autoclose: true,
-                    auth: {
-                        responseType: 'token id_token',
-                        audience: 'https://betcoins-dev.auth0.com/userinfo',
-                        params: {
-                            scope: 'openid profile email'
-                        }
-                    }
-                }
-            });
-        }
-    ])
+    //.config([
+    //    'lockProvider',
+    //    function (lockProvider) {
+    //        // Configure Auth0 Lock instance
+    //        // Read more about configuration here:
+    //        // https://auth0.com/docs/libraries/lock/v11
+    //        lockProvider.init({
+    //            domain: 'betcoins-dev.auth0.com',
+    //            clientID: 'Q9L35ZyZqu3CdYsjw9rMUwgA6dxonBZ6',
+    //            options: {
+    //                autoclose: true,
+    //                auth: {
+    //                    responseType: 'token id_token',
+    //                    audience: 'https://betcoins-dev.auth0.com/userinfo',
+    //                    params: {
+    //                        scope: 'openid profile email'
+    //                    }
+    //                }
+    //            }
+    //        });
+    //    }
+    //])
     .config([
         'socialProvider',
         function (socialProvider) {
