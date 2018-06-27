@@ -1,8 +1,8 @@
 ﻿angular
     .module('betcoins.shared.login', [])
     .controller('sharedLoginController', [
-        '$scope', '$rootScope', 'auth', '$window', 'localStorageService',
-        function ($scope, $rootScope, auth, $window, localStorageService) {
+        '$scope', '$rootScope', '$window', 'localStorageService',
+        function ($scope, $rootScope, $window, localStorageService) {
             //#region Public Methods
 
             $rootScope.$on('event:social-sign-in-success',
@@ -20,12 +20,8 @@
             );
 
             $scope.signin = function () {
-                auth.signin({}, function (profile, token) {
-                    debugger;
-                }, function (err) {
-                    console.log("Error :(", err);
-                });
-            }
+                // NOP
+            };
 
             //#endregion
         }

@@ -253,8 +253,6 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\App\Controllers\Shared\Login.js" />
     <Content Include="Scripts\App\Services\Shared\Common.js" />
-    <Content Include="Scripts\Framework\Angular\angular-auth0.js" />
-    <Content Include="Scripts\Framework\Angular\angular-auth0.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-jwt.js" />
     <Content Include="Scripts\Framework\Angular\angular-local-storage.js" />
     <Content Include="Scripts\Framework\Angular\angular-route.js" />
@@ -266,7 +264,7 @@
     <Content Include="Scripts\Framework\Angular\angular-social.js" />
     <Content Include="Scripts\Framework\Angular\angular.js" />
     <Content Include="Scripts\Framework\Angular\angular.min.js" />
-    <Content Include="Scripts\Framework\lock.js" />
+    <Content Include="Scripts\Framework\lock.min.js" />
     <Content Include="Scripts\Framework\modernizr-2.6.2.js" />
     <Content Include="Scripts\Framework\respond.js" />
     <Content Include="Scripts\Framework\respond.min.js" />
