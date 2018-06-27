@@ -260,6 +260,8 @@
     <Content Include="Scripts\Framework\Angular\angular-csp.css" />
     <Content Include="Scripts\Framework\Angular\angular-loader.js" />
     <Content Include="Scripts\Framework\Angular\angular-loader.min.js" />
+    <Content Include="Scripts\Framework\Angular\angular-lock.js" />
+    <Content Include="Scripts\Framework\Angular\angular-lock.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-message-format.js" />
     <Content Include="Scripts\Framework\Angular\angular-message-format.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-messages.js" />
@@ -286,7 +288,8 @@
     <Content Include="Scripts\App\Controllers\Home\Index.js" />
     <Content Include="Scripts\App\Module.js" />
     <Content Include="Scripts\Framework\Angular\angular-social.js" />
-    <Content Include="Scripts\Framework\lock.min.js" />
+    <Content Include="Scripts\Framework\Auth0\auth0.js" />
+    <Content Include="Scripts\Framework\Auth0\lock.js" />
     <Content Include="Scripts\Framework\modernizr-2.6.2.js" />
     <Content Include="Scripts\Framework\respond.js" />
     <Content Include="Scripts\Framework\respond.min.js" />
