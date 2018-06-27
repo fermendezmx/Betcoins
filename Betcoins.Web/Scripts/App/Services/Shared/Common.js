@@ -1,14 +1,14 @@
 ﻿angular
     .module('betcoins.service.shared.common', [])
     .service('commonService', [
-        'localStorageService',
-        function (localStorageService) {
+        'store',
+        function (store) {
             return {
                 getBaseInfo: function () {
-                    return localStorageService.get('baseInfo');
+                    return store.get('baseInfo');
                 },
                 getToken: function () {
-                    return localStorageService.get('token');
+                    return store.get('token');
                 }
             };
         }

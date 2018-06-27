@@ -273,6 +273,8 @@
     <Content Include="Scripts\Framework\Angular\angular-route.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-sanitize.js" />
     <Content Include="Scripts\Framework\Angular\angular-sanitize.min.js" />
+    <Content Include="Scripts\Framework\Angular\angular-storage.js" />
+    <Content Include="Scripts\Framework\Angular\angular-storage.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-touch.js" />
     <Content Include="Scripts\Framework\Angular\angular-touch.min.js" />
     <Content Include="Scripts\Framework\Angular\angular.js" />
@@ -280,7 +282,6 @@
     <Content Include="Scripts\App\Controllers\Shared\Login.js" />
     <Content Include="Scripts\App\Services\Shared\Common.js" />
     <Content Include="Scripts\Framework\Angular\angular-jwt.js" />
-    <Content Include="Scripts\Framework\Angular\angular-local-storage.js" />
     <Content Include="Scripts\App\Controllers\Home\Init.js" />
     <Content Include="Scripts\App\Controllers\Home\Index.js" />
     <Content Include="Scripts\App\Module.js" />
