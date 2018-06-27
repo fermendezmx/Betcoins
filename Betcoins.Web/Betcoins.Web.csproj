@@ -251,34 +251,13 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\Framework\Angular\angular-animate.js" />
-    <Content Include="Scripts\Framework\Angular\angular-animate.min.js" />
-    <Content Include="Scripts\Framework\Angular\angular-aria.js" />
-    <Content Include="Scripts\Framework\Angular\angular-aria.min.js" />
-    <Content Include="Scripts\Framework\Angular\angular-cookies.js" />
-    <Content Include="Scripts\Framework\Angular\angular-cookies.min.js" />
-    <Content Include="Scripts\Framework\Angular\angular-csp.css" />
-    <Content Include="Scripts\Framework\Angular\angular-loader.js" />
-    <Content Include="Scripts\Framework\Angular\angular-loader.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-lock.js" />
     <Content Include="Scripts\Framework\Angular\angular-lock.min.js" />
-    <Content Include="Scripts\Framework\Angular\angular-message-format.js" />
-    <Content Include="Scripts\Framework\Angular\angular-message-format.min.js" />
-    <Content Include="Scripts\Framework\Angular\angular-messages.js" />
-    <Content Include="Scripts\Framework\Angular\angular-messages.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-mocks.js" />
-    <Content Include="Scripts\Framework\Angular\angular-parse-ext.js" />
-    <Content Include="Scripts\Framework\Angular\angular-parse-ext.min.js" />
-    <Content Include="Scripts\Framework\Angular\angular-resource.js" />
-    <Content Include="Scripts\Framework\Angular\angular-resource.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-route.js" />
     <Content Include="Scripts\Framework\Angular\angular-route.min.js" />
-    <Content Include="Scripts\Framework\Angular\angular-sanitize.js" />
-    <Content Include="Scripts\Framework\Angular\angular-sanitize.min.js" />
     <Content Include="Scripts\Framework\Angular\angular-storage.js" />
     <Content Include="Scripts\Framework\Angular\angular-storage.min.js" />
-    <Content Include="Scripts\Framework\Angular\angular-touch.js" />
-    <Content Include="Scripts\Framework\Angular\angular-touch.min.js" />
     <Content Include="Scripts\Framework\Angular\angular.js" />
     <Content Include="Scripts\Framework\Angular\angular.min.js" />
     <Content Include="Scripts\App\Controllers\Shared\Login.js" />
@@ -293,7 +272,6 @@
     <Content Include="Scripts\Framework\modernizr-2.6.2.js" />
     <Content Include="Scripts\Framework\respond.js" />
     <Content Include="Scripts\Framework\respond.min.js" />
-    <Content Include="Scripts\Framework\Angular\sitemap.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -316,20 +294,6 @@
     <Content Include="Views\Home\Init.cshtml" />
     <Content Include="Views\Shared\Login.cshtml" />
     <Content Include="Scripts\Framework\Angular\angular-jwt.min.js" />
-    <Content Include="Scripts\Framework\Angular\version.json" />
-    <Content Include="Scripts\Framework\Angular\errors.json" />
-    <Content Include="Scripts\Framework\Angular\angular.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-touch.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-sanitize.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-route.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-resource.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-parse-ext.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-messages.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-message-format.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-loader.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-cookies.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-aria.min.js.map" />
-    <Content Include="Scripts\Framework\Angular\angular-animate.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Betcoins.BusinessLogic\Betcoins.BusinessLogic.csproj">
