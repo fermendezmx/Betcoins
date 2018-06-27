@@ -44,7 +44,7 @@
                                         Picture: profile.picture
                                     };
 
-                                    console.log(account);
+                                    store.set('baseInfo', account);
                                 }
 
                                 lock.hide();

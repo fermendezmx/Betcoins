@@ -1,10 +1,10 @@
 ﻿using Betcoins.BusinessLogic.Contracts;
 using Betcoins.Model.Client;
-using System.Web.Http;
+using Betcoins.Web.Api.Common;
 
 namespace Betcoins.Web.Api
 {
-    public class AccountController : ApiController
+    public class AccountController : BaseController
     {
         private readonly IAccountService _accountService;
 

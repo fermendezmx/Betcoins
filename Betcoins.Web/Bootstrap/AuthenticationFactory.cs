@@ -1,10 +1,9 @@
-﻿using Auth0.Owin;
-using Microsoft.Owin.Cors;
-using Microsoft.Owin.Security;
-using Microsoft.Owin.Security.Jwt;
+﻿using Microsoft.Owin.Cors;
+using Microsoft.Owin.Security.ActiveDirectory;
 using Owin;
 using System.Configuration;
 using System.IdentityModel.Tokens;
+using System.Linq;
 
 namespace Betcoins.Web.Bootstrap
 {
@@ -13,19 +12,18 @@ namespace Betcoins.Web.Bootstrap
         public static void Configure(IAppBuilder app)
         {
             string domain = $"https://{ConfigurationManager.AppSettings["auth0:Domain"]}/";
-            string audience = ConfigurationManager.AppSettings["auth0:Audience"];
-            OpenIdConnectSigningKeyResolver keyResolver = new OpenIdConnectSigningKeyResolver(domain);
+            string clientId = ConfigurationManager.AppSettings["auth0:ClientId"];
 
-            app.UseJwtBearerAuthentication(
-                new JwtBearerAuthenticationOptions
+            app.UseActiveDirectoryFederationServicesBearerAuthentication(
+                new ActiveDirectoryFederationServicesBearerAuthenticationOptions
                 {
-                    AuthenticationMode = AuthenticationMode.Active,
                     TokenValidationParameters = new TokenValidationParameters
                     {
-                        ValidAudience = audience,
+                        ValidAudience = clientId,
                         ValidIssuer = domain,
-                        IssuerSigningKeyResolver = (token, securityToken, identifier, parameters) => keyResolver.GetSigningKey(identifier)
-                    }
+                        IssuerSigningKeyResolver = (token, securityToken, identifier, parameters) => parameters.IssuerSigningTokens.FirstOrDefault()?.SecurityKeys?.FirstOrDefault()
+                    },
+                    MetadataEndpoint = $"{domain.TrimEnd('/')}/wsfed/{clientId}/FederationMetadata/2007-06/FederationMetadata.xml"
                 });
 
             // Enable cors
