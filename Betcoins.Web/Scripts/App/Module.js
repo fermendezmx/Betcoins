@@ -19,6 +19,11 @@
                 controller: 'homeIndexController',
                 caseInsensitiveMatch: true
             });
+            $routeProvider.when('/Login', {
+                templateUrl: '/Shared/Login',
+                controller: 'sharedLoginController',
+                caseInsensitiveMatch: true
+            });
             $routeProvider.otherwise({
                 redirectTo: '/'
             });
@@ -42,6 +47,9 @@
                         // Recommended max height of 58px for a better user experience
                         logo: 'https://avatars2.githubusercontent.com/u/5487973?s=460&v=4'
                     },
+                    languageDictionary: {
+                        title: "Betcoins"
+                    },
                     auth: {
                         responseType: 'token id_token',
                         audience: 'https://betcoins-dev.auth0.com/userinfo',
@@ -64,6 +72,7 @@
             });
 
             $httpProvider.interceptors.push('jwtInterceptor');
+            $httpProvider.interceptors.push('authInterceptor');
         }
     ])
     .run([

@@ -1,8 +1,8 @@
 ﻿angular
     .module('betcoins.service.shared.auth0', [])
     .service('auth0Service', [
-        'store', 'lock', 'accountservice',
-        function (store, lock, accountservice) {
+        '$location', 'store', 'lock', 'accountservice',
+        function ($location, store, lock, accountservice) {
             return {
                 login: function () {
                     // Display the Lock widget using the
@@ -50,6 +50,7 @@
 
                                             if (result.Succeeded) {
                                                 store.set('baseInfo', result.Data);
+                                                $location.path('/');
                                             }
                                         });
                                 }
@@ -68,6 +69,20 @@
                     // past the access_token's expiry time
                     var expiresAt = JSON.parse(store.get('expires_at'));
                     return new Date().getTime() < expiresAt;
+                }
+            };
+        }
+    ])
+    .service('authInterceptor', [
+        '$q', '$location',
+        function ($q, $location) {
+            return {
+                responseError: function (response) {
+                    if (response.status === 401) {
+                        $location.path('/Login');
+                    }
+
+                    return $q.reject(response);
                 }
             };
         }

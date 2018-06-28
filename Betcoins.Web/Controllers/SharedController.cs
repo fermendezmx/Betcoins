@@ -11,7 +11,7 @@ namespace Betcoins.Web.Controllers
 
         public ActionResult Login()
         {
-            return View();
+            return PartialView();
         }
     }
 }
