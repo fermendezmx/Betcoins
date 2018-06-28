@@ -3,7 +3,7 @@ using Betcoins.Repositories.Base;
 
 namespace Betcoins.Repositories.Contracts
 {
-    public interface IAccountRepository : IRepository<Account, int>
+    public interface IAccountRepository : IRepository<Account, string>
     {
 
     }

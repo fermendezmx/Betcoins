@@ -4,6 +4,7 @@ namespace Betcoins.BusinessLogic.Contracts
 {
     public interface IAccountService
     {
-        _Account Get(int id);
+        _Account Read(string id);
+        _Account Create(_Account data);
     }
 }

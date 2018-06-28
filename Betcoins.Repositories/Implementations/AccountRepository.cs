@@ -18,9 +18,9 @@ namespace Betcoins.Repositories.Implementations
 
         #region Base
 
-        public Account GetById(int id)
+        public Account GetById(string id)
         {
-            return _context.Accounts.FirstOrDefault();
+            return _context.Accounts.FirstOrDefault(x => x.AccountId == id);
         }
 
         public List<Account> GetAll()

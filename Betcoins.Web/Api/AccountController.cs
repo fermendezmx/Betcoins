@@ -14,14 +14,14 @@ namespace Betcoins.Web.Api
             _accountService = accountService;
         }
 
-        public IHttpActionResult Get(int id)
+        public IHttpActionResult Get(string id)
         {
-            return Ok(_accountService.Get(id));
+            return Ok(_accountService.Read(id));
         }
 
-        public IHttpActionResult Post(_Account account)
+        public IHttpActionResult Post(_Account data)
         {
-            return Ok(account);
+            return Ok(_accountService.Create(data));
         }
     }
 }
