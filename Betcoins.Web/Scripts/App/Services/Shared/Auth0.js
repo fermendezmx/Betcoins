@@ -46,7 +46,11 @@
 
                                     accountservice.post(account)
                                         .then(function (result) {
-                                            store.set('baseInfo', result.data);
+                                            result = result.data;
+
+                                            if (result.Succeeded) {
+                                                store.set('baseInfo', result.Data);
+                                            }
                                         });
                                 }
 

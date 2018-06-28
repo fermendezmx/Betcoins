@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7CE664A4-9A91-4F43-B50E-9304123BC8C0}</ProjectGuid>
+    <ProjectGuid>{C03C465F-F010-453E-8B32-EB9573781B78}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Betcoins.BusinessLogic</RootNamespace>
-    <AssemblyName>Betcoins.BusinessLogic</AssemblyName>
+    <RootNamespace>Betcoins.Infrastructure</RootNamespace>
+    <AssemblyName>Betcoins.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,12 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,30 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\IAccountService.cs" />
-    <Compile Include="Implementations\AccountService.cs" />
+    <Compile Include="Shared\XHRResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Betcoins.DomainClasses\Betcoins.DomainClasses.csproj">
-      <Project>{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}</Project>
-      <Name>Betcoins.DomainClasses</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Betcoins.Infrastructure\Betcoins.Infrastructure.csproj">
-      <Project>{C03C465F-F010-453E-8B32-EB9573781B78}</Project>
-      <Name>Betcoins.Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Betcoins.Model\Betcoins.Model.csproj">
-      <Project>{1212A0AA-D1C4-4597-AC65-A0CC2698B33B}</Project>
-      <Name>Betcoins.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Betcoins.Repositories\Betcoins.Repositories.csproj">
-      <Project>{F9970518-CCA8-4F86-919B-6044B19BB88D}</Project>
-      <Name>Betcoins.Repositories</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

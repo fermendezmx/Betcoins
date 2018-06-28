@@ -307,6 +307,10 @@
       <Project>{4EE11F6A-DB9D-44E8-8200-76BB45DA2FE8}</Project>
       <Name>Betcoins.DomainClasses</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Betcoins.Infrastructure\Betcoins.Infrastructure.csproj">
+      <Project>{c03c465f-f010-453e-8b32-eb9573781b78}</Project>
+      <Name>Betcoins.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Betcoins.Model\Betcoins.Model.csproj">
       <Project>{1212a0aa-d1c4-4597-ac65-a0cc2698b33b}</Project>
       <Name>Betcoins.Model</Name>

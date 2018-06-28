@@ -13,5 +13,7 @@ Betcoins.Context/bin/
 Betcoins.Context/obj/
 Betcoins.Repositories/bin/
 Betcoins.Repositories/obj/
+Betcoins.Infrastructure/bin/
+Betcoins.Infrastructure/obj/
 *.suo
 /.vs/*

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Betcoins.BusinessLogic.Contracts;
 using Betcoins.DomainClasses.Models;
+using Betcoins.Infrastructure.Shared;
 using Betcoins.Model.Client;
 using Betcoins.Repositories.Contracts;
 using System;
@@ -21,8 +22,10 @@ namespace Betcoins.BusinessLogic.Implementations
             return Mapper.Map<_Account>(_accountRepository.GetById(id));
         }
 
-        public _Account Create(_Account data)
+        public XHRResponse<_Account> Create(_Account data)
         {
+            XHRResponse<_Account> result = new XHRResponse<_Account>();
+
             try
             {
                 Account account = _accountRepository.GetById(data.AccountId);
@@ -36,13 +39,17 @@ namespace Betcoins.BusinessLogic.Implementations
                     _accountRepository.Insert(account);
                     _accountRepository.Save();
                 }
+
+                result.Data = data;
+                result.Succeeded = true;
             }
             catch (Exception ex)
             {
-                throw ex;
+                result.Message = ex.Message;
+                result.Succeeded = false;
             }
 
-            return data;
+            return result;
         }
     }
 }
