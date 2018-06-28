@@ -5,9 +5,7 @@
         function ($scope, auth0Service) {
             //#region Init
 
-            if (!auth0Service.isAuthenticated()) {
-                auth0Service.login();
-            }
+            auth0Service.login();
 
             //#endregion
         }

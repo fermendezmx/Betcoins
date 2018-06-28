@@ -5,6 +5,7 @@ using System.Web.Http;
 
 namespace Betcoins.Web.Api
 {
+    [Authorize]
     public class AccountController : BaseController
     {
         private readonly IAccountService _accountService;
