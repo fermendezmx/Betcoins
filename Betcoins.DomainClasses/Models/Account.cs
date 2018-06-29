@@ -12,9 +12,8 @@ namespace Betcoins.DomainClasses.Models
         }
 
         public string AccountId { get; set; }
+        public string FullName { get; set; }
         public string Email { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         public string NickName { get; set; }
         public string Picture { get; set; }
         public DateTime CreatedDate { get; set; }

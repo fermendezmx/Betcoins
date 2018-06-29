@@ -36,11 +36,9 @@
                                 if (profile) {
                                     var account = {
                                         AccountId: profile.sub,
-                                        Email: profile.email,
-                                        FirstName: profile.given_name,
-                                        LastName: profile.family_name,
                                         FullName: profile.name,
-                                        NickName: profile.nickname,
+                                        Email: profile.email || '',
+                                        NickName: profile.nickname || '',
                                         Picture: profile.picture
                                     };
 

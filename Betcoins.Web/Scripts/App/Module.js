@@ -39,7 +39,7 @@
                 domain: webConfig.auth0Domain,
                 clientID: webConfig.auth0ClientId,
                 options: {
-                    allowedConnections: ['facebook'],
+                    allowedConnections: ['facebook', 'github', 'twitter'],
                     allowSignUp: false,
                     container: 'auth0-login-container',
                     auth: {
