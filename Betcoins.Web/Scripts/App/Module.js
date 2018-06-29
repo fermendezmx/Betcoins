@@ -30,21 +30,21 @@
         }
     ])
     .config([
-        'lockProvider',
-        function (lockProvider) {
+        'lockProvider', 'webConfig',
+        function (lockProvider, webConfig) {
             // Configure Auth0 Lock instance
             // Read more about configuration here:
             // https://auth0.com/docs/libraries/lock/v11
             lockProvider.init({
-                domain: 'betcoins-dev.auth0.com',
-                clientID: 'Q9L35ZyZqu3CdYsjw9rMUwgA6dxonBZ6',
+                domain: webConfig.auth0Domain,
+                clientID: webConfig.auth0ClientId,
                 options: {
                     allowedConnections: ['facebook'],
                     allowSignUp: false,
                     container: 'auth0-login-container',
                     auth: {
                         responseType: 'token id_token',
-                        audience: 'https://betcoins-dev.auth0.com/userinfo',
+                        audience: 'https://' + webConfig.auth0Domain + '/userinfo',
                         redirect: false,
                         params: {
                             scope: 'openid profile email'
@@ -67,6 +67,7 @@
             $httpProvider.interceptors.push('authInterceptor');
         }
     ])
+    .constant("webConfig", window.webConfig)
     .run([
         'auth0Service',
         function (auth0Service) {
