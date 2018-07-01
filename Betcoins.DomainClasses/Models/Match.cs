@@ -19,6 +19,10 @@ namespace Betcoins.DomainClasses.Models
         public DateTime Date { get; set; }
         public int HomeTeamGoals { get; set; }
         public int VisitorTeamGoals { get; set; }
+        public bool HasExtraTime { get; set; }
+        public bool HasPenalties { get; set; }
+        public int HomeTeamGoalsInPenalties { get; set; }
+        public int VisitorTeamGoalsInPenalties { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }
 

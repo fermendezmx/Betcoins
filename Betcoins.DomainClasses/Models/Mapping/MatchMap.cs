@@ -30,6 +30,10 @@ namespace Betcoins.DomainClasses.Models.Mapping
             Property(t => t.Date).HasColumnName("Date");
             Property(t => t.HomeTeamGoals).HasColumnName("HomeTeamGoals");
             Property(t => t.VisitorTeamGoals).HasColumnName("VisitorTeamGoals");
+            Property(t => t.HasExtraTime).HasColumnName("HasExtraTime");
+            Property(t => t.HasPenalties).HasColumnName("HasPenalties");
+            Property(t => t.HomeTeamGoalsInPenalties).HasColumnName("HomeTeamGoalsInPenalties");
+            Property(t => t.VisitorTeamGoalsInPenalties).HasColumnName("VisitorTeamGoalsInPenalties");
             Property(t => t.CreatedDate).HasColumnName("CreatedDate");
             Property(t => t.ModifiedDate).HasColumnName("ModifiedDate");
 
