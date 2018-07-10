@@ -24,6 +24,11 @@
                 controller: 'sharedLoginController',
                 caseInsensitiveMatch: true
             });
+            $routeProvider.when('/Test', {
+                templateUrl: '/Home/Test',
+                controller: 'homeInitController',
+                caseInsensitiveMatch: true
+            });
             $routeProvider.otherwise({
                 redirectTo: '/'
             });

@@ -8,6 +8,7 @@ namespace Betcoins.Web
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/framework").Include(
+                "~/Scripts/Framework/jquery-3.3.1.min.js",
                 "~/Scripts/Framework/respond.min.js",
                 "~/Scripts/Framework/Auth0/auth0.js",
                 "~/Scripts/Framework/Auth0/lock.js",
