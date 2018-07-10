@@ -22,6 +22,7 @@ namespace Betcoins.Web
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/App/Module.js",
+                "~/Scripts/App/Controllers/Account/Detail.js",
                 "~/Scripts/App/Controllers/Home/Index.js",
                 "~/Scripts/App/Controllers/Home/Init.js",
                 "~/Scripts/App/Controllers/Shared/Login.js",

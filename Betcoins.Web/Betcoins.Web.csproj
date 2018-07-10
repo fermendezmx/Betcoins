@@ -243,6 +243,7 @@
     <Compile Include="Bootstrap\AuthenticationFactory.cs" />
     <Compile Include="Bootstrap\AutofacFactory.cs" />
     <Compile Include="Bootstrap\AutoMapperFactory.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\ValidateAntiXsrf.cs" />
@@ -255,6 +256,7 @@
     <Content Include="Content\Images\betcoins-topbar-bg.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\App\Controllers\Account\Detail.js" />
     <Content Include="Scripts\App\Services\Account.js" />
     <Content Include="Scripts\App\Services\Shared\Auth0.js" />
     <Content Include="Scripts\Config\Web.config.debug.js" />
@@ -301,7 +303,7 @@
     <Content Include="Views\Home\Init.cshtml" />
     <Content Include="Views\Shared\Login.cshtml" />
     <Content Include="Scripts\Framework\Angular\angular-jwt.min.js" />
-    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Account\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Betcoins.BusinessLogic\Betcoins.BusinessLogic.csproj">

@@ -9,7 +9,8 @@
         'betcoins.shared.login',
         'betcoins.service.shared.common',
         'betcoins.service.shared.auth0',
-        'betcoins.service.account'
+        'betcoins.service.account',
+        'betcoins.account.detail'
     ])
     .config([
         '$routeProvider',
@@ -19,14 +20,14 @@
                 controller: 'homeIndexController',
                 caseInsensitiveMatch: true
             });
+            $routeProvider.when('/Profile', {
+                templateUrl: '/Account/Detail',
+                controller: 'accountDetailController',
+                caseInsensitiveMatch: true
+            });
             $routeProvider.when('/Login', {
                 templateUrl: '/Shared/Login',
                 controller: 'sharedLoginController',
-                caseInsensitiveMatch: true
-            });
-            $routeProvider.when('/Test', {
-                templateUrl: '/Home/Test',
-                controller: 'homeInitController',
                 caseInsensitiveMatch: true
             });
             $routeProvider.otherwise({

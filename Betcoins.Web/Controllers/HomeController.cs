@@ -1,5 +1,4 @@
-﻿using Betcoins.Web.Filters;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Betcoins.Web.Controllers
 {
@@ -13,12 +12,6 @@ namespace Betcoins.Web.Controllers
         }
 
         public ActionResult Index()
-        {
-            return PartialView();
-        }
-
-        [ValidateAntiXsrf]
-        public ActionResult Test()
         {
             return PartialView();
         }
