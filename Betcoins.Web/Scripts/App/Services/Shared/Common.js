@@ -11,7 +11,7 @@
                     return store.get('id_token');
                 },
                 getAntiXsrf: function () {
-                    return $('input[name="__RequestVerificationToken"]')[0].value;
+                    return $('input[name="__RequestVerificationToken"]').val();
                 }
             };
         }

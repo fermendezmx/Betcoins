@@ -22,6 +22,7 @@ namespace Betcoins.Web.App_Start
             AutofacFactory.Configure();
             AuthenticationFactory.Configure(app);
             AntiForgeryConfig.UniqueClaimTypeIdentifier = ClaimTypes.NameIdentifier;
+            AntiForgeryConfig.SuppressIdentityHeuristicChecks = true;
         }
     }
 }

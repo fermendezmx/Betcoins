@@ -75,8 +75,9 @@
     ])
     .constant("webConfig", window.webConfig)
     .run([
-        'auth0Service',
-        function (auth0Service) {
+        '$http', 'auth0Service', 'commonService',
+        function ($http, auth0Service, commonService) {
+            $http.defaults.headers.common['AntiXsrfToken'] = commonService.getAntiXsrf();
             auth0Service.setup();
         }
     ]);
