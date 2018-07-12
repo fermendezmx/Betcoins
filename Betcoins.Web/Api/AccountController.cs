@@ -1,6 +1,7 @@
 ﻿using Betcoins.BusinessLogic.Contracts;
 using Betcoins.Model.Client;
 using Betcoins.Web.Api.Common;
+using Betcoins.Web.Filters;
 using System.Web.Http;
 
 namespace Betcoins.Web.Api
@@ -20,6 +21,7 @@ namespace Betcoins.Web.Api
             return Ok(_accountService.Read(id));
         }
 
+        [ApiAntiForgery]
         public IHttpActionResult Post(_Account data)
         {
             return Ok(_accountService.Create(data));

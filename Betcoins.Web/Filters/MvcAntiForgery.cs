@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace Betcoins.Web.Filters
 {
-    public class ValidateAntiXsrf : FilterAttribute, IAuthorizationFilter
+    public class MvcAntiForgery : FilterAttribute, IAuthorizationFilter
     {
         private const string HeaderId = "AntiXsrfToken";
 

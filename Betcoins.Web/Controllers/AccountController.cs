@@ -6,7 +6,7 @@ namespace Betcoins.Web.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        [ValidateAntiXsrf]
+        [MvcAntiForgery]
         public ActionResult Detail()
         {
             return PartialView();
