@@ -18,7 +18,7 @@ namespace Betcoins.Web
                 "~/Scripts/Framework/Angular/angular-lock.js",
                 "~/Scripts/Framework/Angular/angular-storage.js",
                 "~/Scripts/Framework/Angular/angular-jwt.js"
-            ));
+                ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/App/Module.js",
@@ -29,19 +29,22 @@ namespace Betcoins.Web
                 "~/Scripts/App/Services/Shared/Common.js",
                 "~/Scripts/App/Services/Shared/Auth0.js",
                 "~/Scripts/App/Services/Account.js"
-            ));
+                ));
 
             bundles.Add(new ScriptBundle("~/bundles/config").Include(
                 "~/Scripts/Config/Web.config.debug.js"
-            ));
+                ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/Framework/modernizr-*"));
+                "~/Scripts/Framework/modernizr-*"
+                ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/site.css"));
+                "~/Content/Styles/Fonts.css",
+                "~/Content/Styles/Site.css"
+                ));
         }
     }
 }

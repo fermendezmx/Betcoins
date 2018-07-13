@@ -1,0 +1,8 @@
+﻿/*/////////////////////////////////// ROBOTO CONDENSED ///////////////////////////////////*/
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url("../Fonts/roboto-condensed.ttf"), url('../Fonts/roboto-condensed.woff') format('woff'), url('../Fonts/roboto-condensed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
