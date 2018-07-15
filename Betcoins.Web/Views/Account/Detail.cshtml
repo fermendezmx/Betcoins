@@ -1,5 +1,13 @@
-﻿<div>
-    <img title="Profile" src="{{user.Picture}}" />
-    <span>{{user.FullName}}</span>
-    <span>{{user.Email}}</span>
+﻿<div class="account-detail">
+    <div class="column">
+        <img class="picture" title="Profile" src="{{user.Picture}}" />
+    </div>
+    <div class="column">
+        <label>Name</label><br />
+        <span>{{user.FullName}}</span>
+    </div>
+    <div class="column">
+        <label>Email</label><br />
+        <span>{{user.Email || 'N/A'}}</span>
+    </div>
 </div>

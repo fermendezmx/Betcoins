@@ -54,3 +54,22 @@ footer {
     float: right;
     margin-right: 50px;
 }
+
+/*//////////////////////////////////// ACCOUNT DETAIL ////////////////////////////////////*/
+
+.account-detail {
+    display: flex;
+}
+
+.account-detail .picture {
+    width: 50px;
+    height: 50px;
+}
+
+.account-detail .column {
+    margin-right: 10px;
+}
+
+.account-detail .column label {
+    color: #a59999;
+}
